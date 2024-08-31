@@ -18,7 +18,7 @@ contactAnchor.addEventListener("click",function(){
 
 
 async function getCountry(country) {
-    var response = await fetch(` https://api.weatherapi.com/v1/forecast.json?key=2ee9e0b662244f41b3b154337241306 &q=${country}&days=3`);
+    var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=2ee9e0b662244f41b3b154337241306&q=${country}&days=3`);
     var data = await response.json();
     counteryList=data;
     console.log(counteryList);
